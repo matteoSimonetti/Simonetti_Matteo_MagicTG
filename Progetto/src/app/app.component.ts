@@ -10,7 +10,11 @@ export class AppComponent {
   title = 'Progetto';
   constructor(private api:ApiService){
     this.api.getData().subscribe(data=>{
-      console.log(data);
+      console.log(data); 
+      for (let i = 0; i < 101; i++) {
+        
+        
+      }
     })
   }
 }

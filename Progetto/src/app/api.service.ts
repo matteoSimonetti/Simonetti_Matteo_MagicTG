@@ -8,7 +8,7 @@ export class ApiService {
   constructor(private http:HttpClient) { }
 
   getData(){
-    let url = 'https://api.magicthegathering.io/v1/cards';
+    let url = 'https://api.magicthegathering.io/v1/cards?page=331';
     return this.http.get(url);
   }
 }
