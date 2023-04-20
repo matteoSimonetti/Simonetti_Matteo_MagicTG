@@ -4,7 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { } from 'scryfall-sdk';
+
+import { Card } from 'scryfall-sdk';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,7 @@ import { } from 'scryfall-sdk';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    AppRoutingModule, 
   ],
   providers: [],
   bootstrap: [AppComponent]
