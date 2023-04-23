@@ -6,10 +6,12 @@ import { AppComponent } from './app.component';
 
 
 import { Card } from 'scryfall-sdk';
+import { SearchBarComponent } from './search-bar/search-bar.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SearchBarComponent
   ],
   imports: [
     BrowserModule,
