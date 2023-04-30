@@ -13,8 +13,7 @@ export class AppComponent implements OnInit{
   constructor(private servizioDati:DatiService){}
   
   ngOnInit() {
-    this.servizioDati.getData();
-    console.warn('api iniziale');
+
   }
 }
 

@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { DatiService } from '../dati.service';
+import { Component, OnInit } from '@angular/core';
+
 
 
 @Component({
@@ -7,8 +7,10 @@ import { DatiService } from '../dati.service';
   templateUrl: './search-bar.component.html',
   styleUrls: ['./search-bar.component.css']
 })
-export class SearchBarComponent {
+export class SearchBarComponent implements OnInit{
 
-  constructor(private servizioDati:DatiService){}
+  ngOnInit(): void {
 
-}
+    }
+  }
+

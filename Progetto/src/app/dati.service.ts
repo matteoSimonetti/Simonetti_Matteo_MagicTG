@@ -18,6 +18,7 @@ export class DatiService {
       this.data = res
       console.log(this.data)
     })
+    return this.data;
   }
 
 }
