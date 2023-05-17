@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
 import { DatiService  } from './dati.service';
 import { ListBodyComponent } from './list-body/list-body.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -14,6 +15,7 @@ import { ListBodyComponent } from './list-body/list-body.component';
     ListBodyComponent
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     AppRoutingModule
   ],

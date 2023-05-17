@@ -7,10 +7,19 @@ import { DatiService } from '../dati.service';
   styleUrls: ['./list-body.component.css']
 })
 export class ListBodyComponent implements OnInit{
-  public carte:any = []
+  dati:any = [];
+
   constructor(private servizioDati: DatiService) { }
+
   ngOnInit(): void {
-    this.carte = this.servizioDati.getData();
-    console.log(this.carte);
+    this.servizioDati.getData();
+    //console.log(this.dati);
   }
+
+  leggidati()
+  {
+    this.dati = this.servizioDati.data;
+    console.log(this.dati);
+  }
+
 }
