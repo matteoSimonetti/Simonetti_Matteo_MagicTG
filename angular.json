@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "MTG": {
+    "mtg": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "MTG:build:production"
+              "browserTarget": "mtg:build:production"
             },
             "development": {
-              "browserTarget": "MTG:build:development"
+              "browserTarget": "mtg:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "MTG:build"
+            "browserTarget": "mtg:build"
           }
         },
         "test": {
@@ -94,8 +94,5 @@
         }
       }
     }
-  },
-  "cli": {
-    "analytics": "f562e3d9-3ca9-403a-98a9-ff704be84b41"
   }
 }
