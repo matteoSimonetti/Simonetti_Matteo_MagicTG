@@ -1,4 +1,3 @@
-import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -7,18 +6,17 @@ import { Injectable } from '@angular/core';
 export class DatiService {
 
   private data:any = []
-  constructor(private http: HttpClient) {
+  constructor() {
     
   }
-
+  
   pagina = 1;
+  url ='https://api.magicthegathering.io/v1/cards?page=' + this.pagina;
+
   getData(){
-    const url ='https://api.magicthegathering.io/v1/cards?page=' + this.pagina;
-    this.http.get(url).subscribe((res)=>{
-      this.data = res
-      console.log(this.data)
-    })
-    return this.data;
+    fetch(this.url)
+      .then ((response) => response.json())
+      .then (console.log);
   }
 
 }
