@@ -7,19 +7,18 @@ import { DatiService } from '../dati.service';
   styleUrls: ['./list-body.component.css']
 })
 export class ListBodyComponent implements OnInit{
-  dati:any = [];
+  datiDefinitivi:any = [];
+  constructor(private servizioDati: DatiService) { servizioDati.datiCreati.subscribe((dati) => {
+    //quando i dati sono stati caricati eseguo queste istruzioni
+    dati = this.servizioDati.data;
+    console.log(dati);
+    this.datiDefinitivi = dati
+  });
+}
 
-  constructor(private servizioDati: DatiService) { }
-
+  
   ngOnInit(): void {
+    //prede i dati e li carica sul componente
     this.servizioDati.getData();
-    //console.log(this.dati);
   }
-
-  leggidati()
-  {
-    this.dati = this.servizioDati.data;
-    console.log(this.dati);
-  }
-
 }
