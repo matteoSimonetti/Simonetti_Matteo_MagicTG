@@ -1,4 +1,7 @@
 <div>
     <button (click)="leggidati()">premi</button>
-    {{this.dati.name}}
+</div>
+<div *NgIf="dati !== undefined">
+    <p><a >{{this.dati.cards[0].name}}</a></p>
+    <img src="" alt="">
 </div>
