@@ -12,7 +12,9 @@ export class ListBodyComponent implements OnInit{
     //quando i dati sono stati caricati eseguo queste istruzioni
     dati = this.servizioDati.data;
     console.log(dati);
-    this.datiDefinitivi = dati
+    // assegnare l'array di carte alla variabile dati definitivi, per poterlo usare comodamente con un ngFor
+    this.datiDefinitivi = dati.cards
+    console.log(this.datiDefinitivi, 'datidefinitivi')
   });
 }
 
