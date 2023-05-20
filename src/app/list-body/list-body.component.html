@@ -1,12 +1,21 @@
 <div class="container my-4">
-    <div class="row justify-content-center">
-      <ng-container *ngFor="let dato of datiDefinitivi">
-        <div class="col-md-4" *ngIf="dato.imageUrl">
-          <div class="image-container text-center my-2">
-            <img [src]="dato.imageUrl" alt="Immagine" class="img-fluid">
+  <div class="row justify-content-center">
+    <ng-container *ngFor="let dato of datiDefinitivi">
+      <div class="col-md-4 image-column" *ngIf="dato.imageUrl; else noImageTemplate">
+        <div class="image-container text-center my-2">
+          <img [src]="dato.imageUrl" alt="Immagine" class="img-fluid" />
+        </div>
+      </div>
+      <ng-template #noImageTemplate>
+        <div class="col-md-4 image-column">
+          <div class="no-image-container text-center my-2">
+            <p>Image Name: {{dato.name}}</p>
+            <p>Set name: {{dato.setName}}</p>
+            <p>Image Number: {{dato.number}}</p>
+            <p class="no-image-text">Image not available</p>
           </div>
         </div>
-      </ng-container>
-    </div>
+      </ng-template>
+    </ng-container>
   </div>
-  
+</div>

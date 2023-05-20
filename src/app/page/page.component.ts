@@ -7,21 +7,19 @@ import { DatiService } from '../dati.service';
   styleUrls: ['./page.component.css']
 })
 export class PageComponent {
-  page: number = 1;
-  constructor(private servizioDati: DatiService){
-    
-  }
+  pagina: number = 1;
+  constructor(private servizioDati: DatiService){  }
   
   paginaPlus(){
-    this.servizioDati.pagina++;
+    this.servizioDati.page++;
     this.servizioDati.getData();
-    this.page = this.servizioDati.pagina;
+    this.pagina = this.servizioDati.page;
   }
   paginaMinus(){
-    if (this.servizioDati.pagina > 0) {
-      this.servizioDati.pagina--;
+    if (this.servizioDati.page > 0) {
+      this.servizioDati.page--;
       this.servizioDati.getData();
-      this.page = this.servizioDati.pagina;
+      this.pagina = this.servizioDati.page;
     } 
   }
 }

@@ -4,4 +4,14 @@
     align-items: center;
     height: 100%;
   }
+
+.image-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.no-image-text {
+    margin: 0;
+  }
   

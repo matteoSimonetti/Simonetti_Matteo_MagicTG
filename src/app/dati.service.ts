@@ -7,16 +7,17 @@ import { HttpClient } from "@angular/common/http";
 export class DatiService {
   datiCreati = new EventEmitter<any>();
   data:any = [];
-  pagina = 1;
+  page = 1;
+  name = "";
   constructor(private http: HttpClient) {  }
   
   getData(){
-    const url = "https://api.magicthegathering.io/v1/cards?page=" + this.pagina;
+    const url = "https://api.magicthegathering.io/v1/cards?page=" + this.page + "&name=" + this.name;
     this.http.get(url).subscribe((res)=>{
       this.data = res;
       //emetto un evento
       this.datiCreati.emit(this.data);
-      console.log(this.pagina, 'pagina')
+      console.log(this.page, 'pagina')
     })
   }
 
