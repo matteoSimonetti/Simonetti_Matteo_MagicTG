@@ -6,13 +6,15 @@ import { SearchBarComponent } from './search-bar/search-bar.component';
 import { DatiService  } from './dati.service';
 import { ListBodyComponent } from './list-body/list-body.component';
 import { HttpClientModule } from '@angular/common/http';
+import { PageComponent } from './page/page.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     SearchBarComponent,
-    ListBodyComponent
+    ListBodyComponent,
+    PageComponent
   ],
   imports: [
     HttpClientModule,
