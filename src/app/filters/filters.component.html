@@ -1,22 +1,22 @@
 <ul class="list-unstyled sticky-centered">
   <li class="fs-4">
-    <input type="checkbox" class="quadratino"/>
+    <input type="checkbox" class="quadratino" [(ngModel)]="isCheckedBlack" (change)="black()"/>
     Black
   </li>
   <li class="fs-4">
-    <input type="checkbox" class="quadratino"/>
+    <input type="checkbox" class="quadratino" [(ngModel)]="isCheckedWhite" (change)="white()"/>
     White
   </li>
   <li class="fs-4">
-    <input type="checkbox" class="quadratino"/>
+    <input type="checkbox" class="quadratino" [(ngModel)]="isCheckedBlue" (change)="blue()"/>
     Blue
   </li>
   <li class="fs-4">
-    <input type="checkbox" class="quadratino"/>
+    <input type="checkbox" class="quadratino" [(ngModel)]="isCheckedGreen" (change)="green()"/>
     Green
   </li>
   <li class="fs-4">
-    <input type="checkbox" class="quadratino"/>
+    <input type="checkbox" class="quadratino" [(ngModel)]="isCheckedRed" (change)="red()"/>
     Red
   </li>
 </ul>

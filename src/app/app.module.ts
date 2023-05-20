@@ -8,6 +8,7 @@ import { ListBodyComponent } from './list-body/list-body.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PageComponent } from './page/page.component';
 import { FiltersComponent } from './filters/filters.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -22,7 +23,8 @@ import { FiltersComponent } from './filters/filters.component';
   imports: [
     HttpClientModule,
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [DatiService],
   bootstrap: [AppComponent]
