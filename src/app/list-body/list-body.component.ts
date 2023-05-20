@@ -17,7 +17,6 @@ export class ListBodyComponent implements OnInit{
   });
 }
 
-  
   ngOnInit(): void {
     //prede i dati e li carica sul componente
     this.servizioDati.getData();

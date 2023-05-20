@@ -7,6 +7,7 @@ import { DatiService  } from './dati.service';
 import { ListBodyComponent } from './list-body/list-body.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PageComponent } from './page/page.component';
+import { FiltersComponent } from './filters/filters.component';
 
 
 
@@ -15,7 +16,8 @@ import { PageComponent } from './page/page.component';
     AppComponent,
     SearchBarComponent,
     ListBodyComponent,
-    PageComponent
+    PageComponent,
+    FiltersComponent
   ],
   imports: [
     HttpClientModule,

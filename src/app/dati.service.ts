@@ -12,7 +12,7 @@ export class DatiService {
   constructor(private http: HttpClient) {  }
   
   getData(){
-    const url = "https://api.magicthegathering.io/v1/cards?page=" + this.page + "&name=" + this.name;
+    const url = "https://api.magicthegathering.io/v1/cards?page=" + this.page +"&pageSize=25" + "&name=" + this.name;
     this.http.get(url).subscribe((res)=>{
       this.data = res;
       //emetto un evento
