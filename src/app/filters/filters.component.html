@@ -1,22 +1,105 @@
-<ul class="list-unstyled sticky-centered">
-  <li class="fs-4">
-    <input type="checkbox" class="quadratino" [(ngModel)]="isCheckedBlack" (change)="black()"/>
-    Black
-  </li>
-  <li class="fs-4">
-    <input type="checkbox" class="quadratino" [(ngModel)]="isCheckedWhite" (change)="white()"/>
-    White
-  </li>
-  <li class="fs-4">
-    <input type="checkbox" class="quadratino" [(ngModel)]="isCheckedBlue" (change)="blue()"/>
-    Blue
-  </li>
-  <li class="fs-4">
-    <input type="checkbox" class="quadratino" [(ngModel)]="isCheckedGreen" (change)="green()"/>
-    Green
-  </li>
-  <li class="fs-4">
-    <input type="checkbox" class="quadratino" [(ngModel)]="isCheckedRed" (change)="red()"/>
-    Red
-  </li>
-</ul>
+<div class="sticky-centered">
+  <b>Colors</b>
+  <ul  class="list-unstyled">
+    <li class="fs-4">
+      <input
+        type="checkbox"
+        class="quadratino"
+        [(ngModel)]="isCheckedBlack"
+        (change)="black()"
+      />
+      Black
+    </li>
+    <li class="fs-4">
+      <input
+        type="checkbox"
+        class="quadratino"
+        [(ngModel)]="isCheckedWhite"
+        (change)="white()"
+      />
+      White
+    </li>
+    <li class="fs-4">
+      <input
+        type="checkbox"
+        class="quadratino"
+        [(ngModel)]="isCheckedBlue"
+        (change)="blue()"
+      />
+      Blue
+    </li>
+    <li class="fs-4">
+      <input
+        type="checkbox"
+        class="quadratino"
+        [(ngModel)]="isCheckedGreen"
+        (change)="green()"
+      />
+      Green
+    </li>
+    <li class="fs-4">
+      <input
+        type="checkbox"
+        class="quadratino"
+        [(ngModel)]="isCheckedRed"
+        (change)="red()"
+      />
+      Red
+    </li>
+    <b>Type</b>
+    <li class="fs-4">
+      <input
+        type="checkbox"
+        class="quadratino"
+        [(ngModel)]="isCheckedCreature"
+        (change)="creature()"
+      />
+      Creature
+    </li>
+    <li class="fs-4">
+      <input
+        type="checkbox"
+        class="quadratino"
+        [(ngModel)]="isCheckedSorcery"
+        (change)="sorcery()"
+      />
+      Sorcery
+    </li>
+    <li class="fs-4">
+      <input
+        type="checkbox"
+        class="quadratino"
+        [(ngModel)]="isCheckedInstant"
+        (change)="instant()"
+      />
+      Instant
+    </li>
+    <li class="fs-4">
+      <input
+        type="checkbox"
+        class="quadratino"
+        [(ngModel)]="isCheckedEnchantment"
+        (change)="enchantment()"
+      />
+      Enchantment
+    </li>
+    <li class="fs-4">
+      <input
+        type="checkbox"
+        class="quadratino"
+        [(ngModel)]="isCheckedArtifact"
+        (change)="artifact()"
+      />
+      Artifact
+    </li>
+    <li class="fs-4">
+      <input
+        type="checkbox"
+        class="quadratino"
+        [(ngModel)]="isCheckedLand"
+        (change)="land()"
+      />
+      Land
+    </li>
+  </ul>
+</div>
