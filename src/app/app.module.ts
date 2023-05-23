@@ -9,6 +9,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { PageComponent } from './page/page.component';
 import { FiltersComponent } from './filters/filters.component';
 import { FormsModule } from '@angular/forms';
+import { SitoComponent } from './sito/sito.component';
+import { LoginComponent } from './login/login.component';
 
 
 
@@ -18,7 +20,9 @@ import { FormsModule } from '@angular/forms';
     SearchBarComponent,
     ListBodyComponent,
     PageComponent,
-    FiltersComponent
+    FiltersComponent,
+    SitoComponent,
+    LoginComponent
   ],
   imports: [
     HttpClientModule,

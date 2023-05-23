@@ -1,7 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { SitoComponent } from './sito/sito.component';
+import { LoginComponent } from './login/login.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  { path: '', component:  LoginComponent},
+  { path: 'sito', component: SitoComponent }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
