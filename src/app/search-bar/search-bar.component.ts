@@ -14,6 +14,7 @@ export class SearchBarComponent implements OnInit{
     console.log(nome);
     // Esegui la ricerca
     this.servizioDati.name = nome;
+    this.servizioDati.page = 1;
     this.servizioDati.getData();
   }
 

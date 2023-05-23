@@ -21,6 +21,7 @@ export class FiltersComponent {
     } else if (this.servizioDati.color.includes('B,')) {
       this.servizioDati.color = this.servizioDati.color.replace('B,', '');
     }
+    this.servizioDati.page = 1;
     this.servizioDati.getData();
   }
   white() {
@@ -29,6 +30,7 @@ export class FiltersComponent {
     } else if (this.servizioDati.color.includes('W,')) {
       this.servizioDati.color = this.servizioDati.color.replace('W,', '');
     }
+    this.servizioDati.page = 1;
     this.servizioDati.getData();
   }
   blue() {
@@ -37,6 +39,7 @@ export class FiltersComponent {
     } else if (this.servizioDati.color.includes('U,')) {
       this.servizioDati.color = this.servizioDati.color.replace('U,', '');
     }
+    this.servizioDati.page = 1;
     this.servizioDati.getData();
   }
   green() {
@@ -45,6 +48,7 @@ export class FiltersComponent {
     } else if (this.servizioDati.color.includes('G,')) {
       this.servizioDati.color = this.servizioDati.color.replace('G,', '');
     }
+    this.servizioDati.page = 1;
     this.servizioDati.getData();
   }
   red() {
@@ -53,6 +57,7 @@ export class FiltersComponent {
     } else if (this.servizioDati.color.includes('R,')) {
       this.servizioDati.color = this.servizioDati.color.replace('R,', '');
     }
+    this.servizioDati.page = 1;
     this.servizioDati.getData();
   }
 
@@ -74,6 +79,7 @@ export class FiltersComponent {
     } else if ((this.servizioDati.type = 'Creature')) {
       this.servizioDati.type = this.servizioDati.type.replace('Creature', '');
     }
+    this.servizioDati.page = 1;
     this.servizioDati.getData();
   }
   sorcery() {
@@ -87,6 +93,7 @@ export class FiltersComponent {
     } else if ((this.servizioDati.type = 'Sorcery')) {
       this.servizioDati.type = this.servizioDati.type.replace('Sorcery', '');
     }
+    this.servizioDati.page = 1;
     this.servizioDati.getData();
   }
   instant() {
@@ -99,6 +106,7 @@ export class FiltersComponent {
     } else if ((this.servizioDati.type = 'Instant')) {
       this.servizioDati.type = this.servizioDati.type.replace('Instant', '');
     }
+    this.servizioDati.page = 1;
     this.servizioDati.getData();
   }
   enchantment(){
@@ -112,6 +120,7 @@ export class FiltersComponent {
     } else if ((this.servizioDati.type = 'Enchantment')) {
       this.servizioDati.type = this.servizioDati.type.replace('Enchantment', '');
     }
+    this.servizioDati.page = 1;
     this.servizioDati.getData();
   }
   artifact(){
@@ -125,6 +134,7 @@ export class FiltersComponent {
     } else if ((this.servizioDati.type = 'Artifact')) {
       this.servizioDati.type = this.servizioDati.type.replace('Artifact', '');
     }
+    this.servizioDati.page = 1;
     this.servizioDati.getData();
   }
   land(){
@@ -138,6 +148,7 @@ export class FiltersComponent {
     } else if ((this.servizioDati.type = 'Land')) {
       this.servizioDati.type = this.servizioDati.type.replace('Land', '');
     }
+    this.servizioDati.page = 1;
     this.servizioDati.getData();
   }
 }
